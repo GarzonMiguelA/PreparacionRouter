@@ -1,23 +1,27 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
-import recipes from '@/assets/recipes.json';
-import RecipeListComponent from './components/RecipeListComponent.vue';
+import booksData from '@/assets/booksData.json';
 </script>
 
 <template>
-  <h1>Bienvenido a recetas, selecciona una y mira sus respectivos detalles</h1>
-  <nav>
-    <ul>
-      <li><RouterLink to="/">Home</RouterLink></li>
-      <li v-for="(receta, index) in recipes.recipes" :key="index">
-        <RouterLink :to="'/Todos/' + receta.slug">{{ receta.name }}</RouterLink>
-      </li>
-    </ul>
-  </nav>
+  <header>
+    <h1>Books</h1>
+    <nav id="nav">
+      <ul>
+        <li>
+          <RouterLink to="/">Home</RouterLink>
+        </li>
+        <li v-for="(book, index) in booksData.books" :key="index">
+          <RouterLink :to="'/books/' + book.id">
+            {{ book.title }}
+          </RouterLink>
+        </li>
+      </ul>
+    </nav>
+    
+    <RouterView/>
 
-  <RecipeListComponent />
-
-  <RouterView/>
+  </header>
 </template>
 
 <style scoped>

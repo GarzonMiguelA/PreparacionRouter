@@ -1,0 +1,43 @@
+{
+  "books": [
+    {
+      "title": "To Kill a Mockingbird",
+      "slug": "to-kill-a-mockingbird",
+      "image": "mockingbird.jpg",
+      "id": 1,
+      "description": "A novel about the injustices of the deep South...",
+      "author": {
+        "name": "Harper Lee",
+        "slug": "harper-lee",
+        "image": "harper-lee.jpg",
+        "bio": "An American novelist widely known for her novel..."
+      }
+    },
+    {
+      "title": "1984",
+      "slug": "1984",
+      "image": "1984.jpg",
+      "id": 2,
+      "description": "A dystopian social science fiction novel...",
+      "author": {
+        "name": "George Orwell",
+        "slug": "george-orwell",
+        "image": "george-orwell.jpg",
+        "bio": "An English novelist, essayist, journalist, and critic..."
+      }
+    },
+    {
+      "title": "Pride and Prejudice",
+      "slug": "pride-and-prejudice",
+      "image": "pride-prejudice.jpg",
+      "id": 3,
+      "description": "A romantic novel of manners...",
+      "author": {
+        "name": "Jane Austen",
+        "slug": "jane-austen",
+        "image": "jane-austen.jpg",
+        "bio": "An English novelist known for her realism and biting social commentary..."
+      }
+    }
+  ]
+}
